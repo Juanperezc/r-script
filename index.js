@@ -1,11 +1,11 @@
 var _ = require("underscore"),
     child_process = require("child_process");
 
-function init(path) {
-  var obj = new R(path);
-  _.bindAll(obj, "data", "call", "callSync");
-  return obj;
-}
+    function init(path) {
+      var obj = new R(path);
+      _.bindAll(obj, "data", "call", "callSync");
+      return obj;
+    }
 
 function R(path) {
   this.d = {};
